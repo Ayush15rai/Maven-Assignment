@@ -1,16 +1,25 @@
-# Maven-Assignment
+# Maven-Assignment ##
+------------------------------------------------
+Ayush Rai (1707)
+------------------------------------------------
 
-It's a multi module project. 
-We have a module "Assign" whose modules are "string_api" and "string_impl".
-We have three pom files each for all modules.
-In Assign pom.xml file we have created the modules and added the assembly plugin. And the packaging here should be "pom".
-In string_api pom.xml file we have mentioned the parent module specifications with packaging as "jar".
-In string_impl pom.xml file we have mentioned the parent module specifications with packaging as "jar". We have mentioned the dependency as string-api because we want to call the string_api java class inside the string_impl. And we have added the plugins too i.e checkstyle and spotbugs. 
-There are two java files StringFunctions.java in string_api module and Application.java in string_impl.
-Basically, in StringFunctions we have created two methods i.e stringReverse and stringLength.
-Then, we have created the object of StringFunctions in Application class and called them.
+## It's a project with multiple modules. The modules "string api" and "string impl" are part of the "Assign" module. 
+
+## For each module, we have three pom files. We generated the modules and put the assembly plugin in the Assign pom.xml file. 
+
+## In this case, the package should be "pom." We mentioned the parent module specs with packaging as "jar" in the string api pom.xml file. 
+
+## We mentioned the parent module specs with packaging as "jar" in the "string impl pom.xml" file. Because we wish to invoke the string api java class from within the string impl, we named the dependency string-api. 
+
+## We've also included the plugins, such as checkstyle and spotbugs."StringFunctions.java" is in the string api module, and Application.java is in the string impl module.
+
+## We've basically generated two methods in StringFunctions: stringReverse and stringLength.
+
+## Then, in the Application class, we created a StringFunctions object and called it.
+
+## Run the following command to create the Target folder: mvn clean compile assembly:
+
+## Then run this command from the string impl/target directory. - jar string impl-1.0-SNAPSHOT-jar-with-dependencies.jar java -jar string impl-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
-For building the Target folder run this command - mvn clean compile assembly:single
-Then from the string_impl/target run this command - java -jar string_impl-1.0-SNAPSHOT-jar-with-dependencies.jar
 

@@ -1,7 +1,8 @@
 # Maven-Assignment ##
 ------------------------------------------------
 Ayush Rai (1707)
-------------------------------------------------
+----------------------------------------------------------------------------
+
 
 ## It's a project with multiple modules. The modules "string api" and "string impl" are part of the "Assign" module. 
 
@@ -19,7 +20,7 @@ Ayush Rai (1707)
 
 ## Run the following command to create the Target folder: mvn clean compile assembly:
 
-## Then run this command from the string impl/target directory. - jar string impl-1.0-SNAPSHOT-jar-with-dependencies.jar java -jar string impl-1.0-SNAPSHOT-jar-with-dependencies.jar
+## Then run this command from the string impl/target directory. - jar string impl-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
 
